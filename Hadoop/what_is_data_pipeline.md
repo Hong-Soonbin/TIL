@@ -28,10 +28,19 @@ Sorce -> Processing -> Destination
 
 ## 데이터 분석
 
-정규화된 스키마 vs 스타 스키마
+정규화된 스키마(Snowflake) vs 스타 스키마
 
 
-ETL vs ELT
+### ETL vs ELT
+
+#### 스타 스키마
+  - 차원(Demension) 테이블과 팩트(Fact) 테이블로 구성되어 있다.
+  - Demension Talbel은 비정규화 되어 저장되는 것이 특징이다.
+  - Fact Table은 정규화 되어 저장하고 주로 ID값, key값을 몰아 넣는다.
+  - Fact Table에 필연적으로 row수가 많아 Demension Table에는 column수가 많게 Fact Table은 적게 구성한다.
+  - 최대 장점은 원하는 정보가 주제별로 하나의 테이블에 다 정리되어 있다.
+  - 데이터 웨어하우스는 데이터를 코드화하지 않고 그 값 자체를 저장하기 때문에 따로 참조할 정보가 줄어든다. ex) 성별 남 여 -> M, F로 코드화 할 수 있지만 데이터 웨어하우스에서는 Man, Female과 같은 그 값 전체를 기술하는 것을 좋아한다.
+  - 
 
 ETL
 > Extract(추출) - Transform(변환) - Load(적재)
