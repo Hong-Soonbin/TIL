@@ -1,4 +1,6 @@
-# 정리하는 뇌
-> 지음 : 대니얼 J. 레바틴  
-> 출판 : 와이즈베리
-## 
+
+<span style="color:red">빨간</span>  
+<span style="color:blue">파란</span>  
+<span style="color:green">초록</span>  
+<span style="color:yellow">노란</span>  
+<span style="color:purple">보라</span>
